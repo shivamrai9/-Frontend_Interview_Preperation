@@ -2,13 +2,19 @@ import { useState } from "react";
 import "./App.css";
 import CardDemo from "./components/examples/CardDemo";
 import TabForm from "./components/ui/TabForm/TabForm";
+import { Outlet } from "react-router-dom";
+import Navbar from "./components/examples/Navbar";
 
 function App() {
   return (
-    <>
-      {/* <CardDemo /> */}
-      <TabForm />
-    </>
+    <main className="min-h-screen bg-gray-900 text-white ">
+
+      <Navbar />
+      <div className="max-w-7xl mx-auto py-3">
+
+      <Outlet />
+      </ div>
+    </main>
   );
 }
 
