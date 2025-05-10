@@ -3,6 +3,7 @@ import App from "./App";
 import ValidateOtp from "./pages/ValidateOtp/ValidateOtp";
 import TabForm from "./components/ui/TabForm/TabForm";
 import Home from "./pages/Home";
+import ChipsInput from "./pages/chipsInput/ChipsInput";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path:"tabs-form",
         element:<TabForm />
+      },
+      {
+        path:"chips-input",
+        element:<ChipsInput />
       }
     ]
   }

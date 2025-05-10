@@ -7,6 +7,9 @@ const challenges = [
   },
   {
     name:"Otp Input", path:"otp-input"
+  },
+  {
+    name:"Chips Input", path:"chips-input"
   }
 ]
 
