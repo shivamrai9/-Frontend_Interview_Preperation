@@ -4,7 +4,6 @@ import Profile from "./Profile";
 import Interests from "./Interests";
 import Settings from "./Settings";
 import "../TabForm/TabFrom.css";
-import MemoComponent from "../../examples/MemoComponent";
 
 const TabForm = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -15,19 +14,6 @@ const TabForm = () => {
     interests: [],
     theme: "dark",
   });
-const [search,setSearch] = useState("");
-const [count,setCount] = useState(0);
-
-const products = useMemo(() => {
-  console.log("Generating product list");
-  return Array.from({ length: 10000 }, (_, i) => `Product ${i + 1}`);
-}, []);
-
-
-const filteredProducts = useMemo(() => {
-  console.log("Filtering products");
-  return products.filter((p) => p.toLowerCase().includes(search.toLowerCase()));
-}, [search, products]);
 
   const [error,setError] = useState({
     name:"",
@@ -139,23 +125,6 @@ const filteredProducts = useMemo(() => {
           </button>
         )}
       </div>
-
-      <h2 className="mt-7">Product Search</h2>
-
-      <input
-        className="bg-gray-400 outline-none p-2 mr-3"
-        type="text"
-        placeholder="Search products..."
-        value={search}
-        onChange={(e) => setSearch(e.target.value)}
-      />
-      <button
-        onClick={() => setCount(count + 1)}
-        className="border-2 p-2 rounded-xl"
-      >
-        Unrelated Button: {count}
-      </button>
-      <MemoComponent products={filteredProducts} />
     </>
   );
 };
