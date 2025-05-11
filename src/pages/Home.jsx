@@ -10,6 +10,9 @@ const challenges = [
   },
   {
     name:"Chips Input", path:"chips-input"
+  },
+  {
+    name:"Stepper", path:"stepper"
   }
 ]
 

@@ -72,7 +72,7 @@ const ValidateOtp = ({
 
   
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-4 bg-gray-50 dark:bg-gray-900">
+    <div className=" flex flex-col items-center justify-center px-4 bg-gray-50 dark:bg-gray-900">
       <h1 className="text-2xl font-semibold text-gray-800 dark:text-white mb-6">
         Validate OTP
       </h1>

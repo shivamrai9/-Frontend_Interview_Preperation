@@ -20,7 +20,7 @@ const ChipsInput = () => {
   };
 
   return (
-    <div className="h-screen flex flex-col justify-center items-center bg-gray-900 text-white px-4">
+    <div className="flex flex-col justify-center items-center bg-gray-900 text-white px-4">
       <h1 className="text-2xl font-semibold mb-4">Add Your Tags</h1>
 
       <input

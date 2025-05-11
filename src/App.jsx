@@ -10,7 +10,7 @@ function App() {
     <main className="min-h-screen bg-gray-900 text-white ">
 
       <Navbar />
-      <div className="max-w-7xl mx-auto py-3">
+      <div className="max-w-7xl mx-auto py-3 h-[calc(100vh-60px)] overflow-y-auto p-3">
 
       <Outlet />
       </ div>
