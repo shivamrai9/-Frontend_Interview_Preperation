@@ -3,18 +3,26 @@ import { Link } from "react-router-dom";
 
 const challenges = [
   {
-    name:"Tabs Form", path: "/tabs-form"
+    name: "Tabs Form",
+    path: "/tabs-form",
   },
   {
-    name:"Otp Input", path:"otp-input"
+    name: "Otp Input",
+    path: "otp-input",
   },
   {
-    name:"Chips Input", path:"chips-input"
+    name: "Chips Input",
+    path: "chips-input",
   },
   {
-    name:"Stepper", path:"stepper"
-  }
-]
+    name: "Stepper",
+    path: "stepper",
+  },
+  {
+    name: "Auto Complete Search Bar",
+    path: "autocomplete-searchinput",
+  },
+];
 
 const Home = () => {
   return (

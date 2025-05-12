@@ -5,6 +5,7 @@ import TabForm from "./components/ui/TabForm/TabForm";
 import Home from "./pages/Home";
 import ChipsInput from "./pages/chipsInput/ChipsInput";
 import Stepper from "./pages/stepper/Stepper";
+import AutoComleteBar from "./pages/autocompleteSearchBar/AutoComleteBar";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path:"stepper",
         element:<Stepper />
+      },
+      {
+        path:"autocomplete-searchinput",
+        element:<AutoComleteBar />
       }
     ]
   }
