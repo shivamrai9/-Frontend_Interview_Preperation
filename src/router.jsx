@@ -6,38 +6,43 @@ import Home from "./pages/Home";
 import ChipsInput from "./pages/chipsInput/ChipsInput";
 import Stepper from "./pages/stepper/Stepper";
 import AutoComleteBar from "./pages/autocompleteSearchBar/AutoComleteBar";
+import MemoryGame from "./pages/memoryGame/MemoryGame";
 
 const router = createBrowserRouter([
   {
-    path:"/",
+    path: "/",
     element: <App />,
     children: [
       {
-        index:true,
+        index: true,
         element: <Home />,
       },
       {
-        path:"otp-input",
-        element:<ValidateOtp/>
+        path: "otp-input",
+        element: <ValidateOtp />,
       },
       {
-        path:"tabs-form",
-        element:<TabForm />
+        path: "tabs-form",
+        element: <TabForm />,
       },
       {
-        path:"chips-input",
-        element:<ChipsInput />
+        path: "chips-input",
+        element: <ChipsInput />,
       },
       {
-        path:"stepper",
-        element:<Stepper />
+        path: "stepper",
+        element: <Stepper />,
       },
       {
-        path:"autocomplete-searchinput",
-        element:<AutoComleteBar />
-      }
-    ]
-  }
-])
+        path: "autocomplete-searchinput",
+        element: <AutoComleteBar />,
+      },
+      {
+        path: "memory-game",
+        element: <MemoryGame />
+      },
+    ],
+  },
+]);
 
 export default router;
